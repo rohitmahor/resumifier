@@ -1,0 +1,80 @@
+form {
+    float: none;
+}
+
+.form {
+    display: block;
+    float: none;
+    margin: 0px auto 20px auto;
+    padding: 0;
+    padding-bottom: 20px;
+    background: white;
+    overflow: auto;
+    /*background: #252626;*/
+    box-shadow: 2px 2px 5px black;
+    border-radius: 5px;
+
+}
+.form  input {
+    height: 40px;
+    margin: 10px 0px;
+}
+
+input[type="button"]{
+    border:none;
+}
+
+#submit {
+    float: right;
+    width: 70px;
+    border:none;
+}
+
+.usericon {
+    text-align: center;
+    font-size: 80px;
+    background: #ef6c00 ;
+    width: 114px;
+    margin:20px auto;
+    color: white;
+    border-radius: 50%;
+}
+
+.formHeading {
+    padding-top: 45px;
+    text-shadow: 1px 1px 3px black;
+    background:#ef6c00 ;
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.inputs {
+    display: block;
+    float: none;
+    margin:0 auto;
+}
+
+.input-box {
+    background: transparent;
+    border:none;
+    border-bottom: 1px solid grey;
+}
+
+
+input[type="button"]:hover,input[type="submit"]:hover {
+    box-shadow: 0 1px 1px black;
+}
+
+.redplace::placeholder {
+    color: red;
+}
+
+.alert {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    font-size: 18px;
+    padding: 10px;
+}

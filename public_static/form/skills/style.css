@@ -1,0 +1,139 @@
+.usericon {
+    display: block;
+    float: none;
+    margin:20px auto;
+    text-align: center;
+    font-size: 80px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #e53935 ;
+}
+
+#skill-input {
+    height: 40px;
+    border-radius: 20px;
+    position: relative;
+    width: 100%;
+    border-bottom: 2px solid #d32f2f;
+    border-right: 2px solid #d32f2f;
+    border-top: 2px solid #ff5252 ;
+    border-left: 2px solid #ff5252 ;
+    background: #ffebee;
+}
+
+.skill {
+    position: relative;
+    width: 86%;
+    display: block;
+    left:7%;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+
+
+.main h2 {
+    margin: 0;
+    padding: 20px ;
+    text-align: center;
+    color: beige;
+    background:  #d32f2f;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+#add-skill {
+    left:100%;
+    margin-left: -40px;
+    position: absolute;
+    height: 40px;
+    border-radius: 50%;
+    width: 40px;
+    border-bottom: 2px solid #d32f2f;
+    border-right: 2px solid #d32f2f;
+    border-top: 2px solid #ff5252 ;
+    border-left: 2px solid #ff5252 ;
+    background: #ff8a80 ;
+    color: white;
+}
+
+#add-skill:focus {
+    outline: none;
+}
+
+#skill-input:focus {
+    outline: none;
+    background: #ffcdd2 ;
+}
+
+.main {
+    display: block;
+    float: none;
+    margin: 0 auto 20px auto;
+    background: rgba(0,0,0,0.7);
+    padding: 0 0 150px 0;
+    border: 1px solid  #d32f2f;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    box-shadow: 1px 2px 5px black;
+}
+
+#skill-level {
+    color: beige;
+    text-align:center;
+    padding: 0;
+    float: none;
+    /*display: block;*/
+    margin: 60px auto 0 auto;
+}
+
+.display{
+    display: none;
+}
+
+#div h4 {
+    color: beige;
+    margin-bottom: 0;
+}
+
+#div span {
+    display: block;
+    margin-bottom: 10px;
+    color: grey;
+}
+
+#close {
+    font-size: 40px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    color: darkred;
+}
+
+#close:hover {
+    color: red;
+}
+
+input[type="submit"] {
+    float: right;
+    width: 70px;
+    background:#1295c9;
+    height:40px;
+    font-weight: bold;
+    color: white;
+    border:none;
+    border-radius: 2px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 1px 2px 3px black;
+    background: #12a9b9;
+}
+
+#add-skill:hover {
+    background:#d32f2f;
+}

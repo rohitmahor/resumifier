@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>border</title>
+    <style>
+        .a-tag {
+            position: absolute;
+            width:100px;
+            height: 50px;
+            background: black;
+            text-align: center;
+            color: #ff0;
+            }
+
+        .a-tag:before,.a-tag:after,
+        .a-tag span:before,.a-tag span:after{
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #ff0;
+            transition: 1s;
+            mix-blend-mode: hue;
+        }
+
+        .a-tag:before {
+            top:-2px;
+            left: -2px;
+        }
+
+        .a-tag:after {
+            top:-2px;
+            right: -2px;
+        }
+
+        .a-tag span:before {
+            bottom:-2px;
+            left: -2px;
+        }
+
+        .a-tag span:after {
+            bottom:-2px;
+            right: -2px;
+        }
+
+        .a-tag:hover:before,
+        .a-tag:hover:after,
+        .a-tag:hover span:before,
+        .a-tag:hover span:after {
+            width: 50px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+<a href="#" class="a-tag"><span></span>Next</a>
+</body>
+</html>

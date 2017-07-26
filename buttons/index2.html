@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flip</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .box {
+            display: inline-block;
+            padding: 3px;
+            background: #262626;
+            position: absolute;
+        }
+        .inner_box {
+            width: 200px;
+            height: 50px;
+            background: #fff;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .inner_box h4 {
+            position: absolute;
+            z-index: 12;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-100%);
+            text-align: center;
+            font-weight: bold;
+            letter-spacing:3px;
+            font-size: 20px;
+        }
+
+        .box:before{
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            top:0;
+            left:-50%;
+            background: #fff;
+            transition: .5s;
+            z-index: 10;
+        }
+        .box:after{
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            top:0;
+            right:-50%;
+            background: #fff;
+            transition: .5s;
+            z-index: 10;
+        }
+
+        .inner_box:before {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            top:0;
+            left:-50%;
+            background: #262626;
+            transition: .5s;
+            z-index: 11;
+        }
+
+        .inner_box:after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            top:0;
+            right:-50%;
+            background: #262626;
+            transition: .5s;
+            z-index: 11;
+        }
+
+        .box:hover:before {
+            left:0;
+        }
+
+        .box:hover:after {
+            right:0;
+        }
+        
+        .box:hover .inner_box h4 {
+            color: #fff;
+        }
+        .box:hover .inner_box:before {
+            left:0;
+        }
+
+        .box:hover .inner_box:after {
+            right:0;
+        }
+
+    </style>
+</head>
+<body>
+<a href="#">
+    <div class="box">
+        <div class="inner_box"><h4>Next</h4></div>
+    </div>
+</a>
+</body>
+</html>

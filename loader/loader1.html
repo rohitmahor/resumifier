@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devic-width , initial-scale=1">
+    <title>Dozing Bird</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .loader-main {
+            position: absolute;
+            width:100%;
+            height:100%;
+            background: radial-gradient(#252626,black);
+            z-index: 100;
+        }
+        .ring{
+            position:absolute;
+            top:50%;
+            left:50%;
+            margin-left: -160px;
+            margin-top: -160px;
+            width: 300px;
+            height:300px;
+            background: transparent;
+            border: 15px solid grey;
+            border-radius: 50%;
+            background: lightblue;
+            overflow: hidden;
+        }
+
+        .bird-img {
+            position: absolute;
+            top: 108px;
+            left: 55px;
+        }
+
+        .eye {
+            position: absolute;
+            background: #329a02;
+            top: 167px;
+            left: 134px;
+            width: 25px;
+            height: 24px;
+            transform: rotate(-16deg);
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 2px;
+            animation: eye 2s linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        .eye1 {
+            position: absolute;
+            background: #329a02;
+            top: 164px;
+            left: 114px;
+            width: 23px;
+            height: 24px;
+            transform: rotate(16deg);
+            border-top-left-radius: 140%;
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 2px;
+            animation: eye 2s linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        .eyebrows {
+            position: absolute;
+            top: 160px;
+            left: 117px;
+            width: 15px;
+            height: 20px;
+            border-top: 3px solid black;
+            transform: rotate(20deg);
+            animation: eyebrows 2s ;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+
+        .eyebrows1 {
+            position: absolute;
+            top: 161px;
+            left: 143px;
+            width: 15px;
+            height: 20px;
+            border-top: 3px solid black;
+            transform: rotate(-20deg);
+            animation: eyebrows 2s ;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+
+        .cloud,.cloud1,.cloud2{
+            position: relative;
+            animation: cloud 7s linear ;
+            animation-iteration-count: infinite;
+        }
+
+        .cloud1 {
+            display: inline-block;
+            top: 50px;
+            margin-left: 50px;
+        }
+
+        .cloud2 {
+            display: inline-block;
+            top: 100px;
+            margin-left: -300px;
+            animation: cloud 9s linear ;
+            animation-iteration-count: infinite;
+        }
+
+        .loader-main > p {
+            position: relative;
+            top: 80%;
+            left: 48%;
+            font-size: 20px;
+        }
+
+        .loader-main > p > span {
+            font-size: 8px;
+        }
+
+        .dot1 {
+            animation: dots 2s 2s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        .dot2 {
+            animation: dots 2s 4s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        .dot3 {
+            animation: dots 2s 6s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        .dot4 {
+            animation: dots 2s 8s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        @keyframes cloud {
+            from{left: -200px}
+            to {left: 350px}
+        }
+
+        @keyframes eye {
+            from{height: 13px;}
+            to{height: 25px;}
+        }
+
+        @keyframes eyebrows {
+            from{top:152px;}
+            to{top:160px;}
+        }
+
+        @keyframes dots {
+            from{opacity: 0}
+            to{opacity: 1}
+        }
+    </style>
+</head>
+
+
+<body>
+<div class="loader-main">
+
+    <div class="ring">
+        <img src="../public_static/final%20portfolio/cloud2.png" alt="" width="100px" class="cloud">
+        <img src="../public_static/final%20portfolio/cloud2.png" alt="" width="100px" class="cloud1">
+        <img src="../public_static/final%20portfolio/cloud2.png" alt="" width="100px" class="cloud2">
+        <img class="bird-img" src="../public_static/final%20portfolio/Funny-Cartoon-Bird_1.png" alt="" width="200px">
+        <div class="eye"></div>
+        <div class="eye1"></div>
+        <div class="eyebrows"></div>
+        <div class="eyebrows1"></div>
+    </div>
+    <p style="color:#fff;">
+        loading
+        <span>
+            <i class="dot1 fa fa-circle" aria-hidden="true"></i>
+            <i class="dot2 fa fa-circle" aria-hidden="true"></i>
+            <i class="dot3 fa fa-circle" aria-hidden="true"></i>
+            <i class="dot4 fa fa-circle" aria-hidden="true"></i>
+        </span>
+
+    </p>
+
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous">
+
+</script>
+</body>
+</html>

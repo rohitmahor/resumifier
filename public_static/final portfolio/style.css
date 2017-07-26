@@ -1,0 +1,203 @@
+canvas {
+    display:block;
+    /*background: rgb(33,36,50);*/
+    background: #6a1b9a;
+    position: fixed;
+    z-index: -1;
+}
+
+#particles-js {
+    width: 100%;
+    background: #ef5350;
+}
+header {
+    width: 100%;
+    position: absolute;
+    margin-bottom: 50px;
+    /*background: url("http://hdpicturez.com/wp-content/uploads/2016/05/Best-Background-Wallpaper-2560x1600.jpg"),rgba(0,0,0,0.5) fixed no-repeat;*/
+    background-blend-mode: color;
+
+}
+
+header > h1 {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 50px;
+    font-family: 'Zilla Slab', serif;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 1px 2px black;
+}
+
+
+.heading {
+    position: relative;
+    background: rgba(0,0,0,0.7);
+    width:354px;
+}
+
+.heading:before {
+    position: absolute;
+    content:"";
+    border:47px solid transparent;
+    border-right:47px solid rgba(0,0,0,0.7);
+    left: -94px;
+    top:0;
+}
+
+.heading:after {
+    position: absolute;
+    content:"";
+    border:47px solid transparent;
+    border-left:47px solid rgba(0,0,0,0.7);
+    left: 354px;
+    top:0;
+}
+
+.main {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    float: none;
+    margin: 20px auto 20px auto;
+    border:1px solid silver;
+    padding:0 0 0 0;
+    box-shadow: 1px 2px 2px black;
+}
+
+.intro {
+    background: white;
+    height: 200px;
+}
+
+.profile {
+    background: white;
+    border-top:1px solid #f5f5f5    ;
+    min-height: 100vh;
+}
+
+.content {
+    background: #f5f5f5;
+    padding-bottom: 30px;
+    /*height: 100vh;*/
+}
+
+.profile-pic {
+    /*float: left;*/
+    width: 150px;
+    height: 150px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    border: 5px solid black;
+    padding: 5px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.name {
+    margin-left: 10px;
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+    color: #000;
+}
+
+.profession {
+    position: absolute;
+    top: 95px;
+    left: 180px;
+}
+
+.profile ul {
+    padding-left: 40px;
+}
+
+.profile ul li {
+    margin-top: 40px;
+}
+
+.secondary {
+    margin-left: 40px;
+}
+
+.secondary1 {
+    margin-left: 40px;
+}
+
+.training-content {
+    margin-bottom: 25px;
+    margin-left: 25px;
+}
+
+.logout {
+    position: absolute;
+    /*float: right;*/
+    left: 85%;
+    top: 75px;
+
+}
+
+.user_icon:hover {
+    cursor: pointer;
+}
+
+.delete {
+    margin-right: 50px;
+}
+
+.profile_edit,.edit,.delete {
+    font-size: 18px;
+    float: right;
+    margin-left: 20px;
+    border:2px solid deepskyblue;
+    padding: 5px;
+    border-radius: 50%;
+    color: deepskyblue;
+    display: none;
+}
+
+.profile_edit{
+    margin-right: 50px;
+}
+
+.secondary:hover .delete,.secondary:hover .edit {
+    display: inline;
+}
+
+.training-content:hover .delete,
+.training-content:hover .edit
+{
+    display: inline;
+}
+
+.profile > h2:hover .profile_edit{
+    display: inline;
+}
+
+.profile_edit:hover,.edit:hover,.delete:hover{
+    cursor: pointer;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid silver;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.add {
+    /*float: left;*/
+    font-size: 25px;
+    color: deepskyblue;
+    margin-left: 50px;
+}
+
+.add:hover {
+    cursor: pointer;
+}

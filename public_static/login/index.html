@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="common_style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loader">
+        <div class="icon0"></div>
+        <div class="icon1"></div>
+        <div class="icon2"></div>
+        <div class="icon3"></div>
+    </div>
+    <header>
+
+        <h1 class="heading">
+            <span style="font-size: 10px;color: #fff;position: absolute;top: 45%;left:-20px"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></span>
+            <span style="color:brown">R</span>
+            <span style="color:#eeff41">e</span>
+            <span>s</span>
+            <span style="color:#2e7d32">u</span>
+            <span style="color:#512da8">m</span>
+            <span style="color: #90caf9;">i</span>
+            <span style="color: #ff3d00;">f</span>
+            <span style="color: grey;">i</span>
+            <span style="color: #eeff41;">e</span>
+            <span style="color: #512da8;">r</span>
+            <span style="font-size: 10px;color: #fff;position: absolute;top: 45%;left:104%;z-index: 1"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></span>
+        </h1>
+        <h1 style="padding-top: 0;font-size: 30px">We build your awesome resume.</h1>
+    </header>
+    <main>
+        <div id="alert"></div>
+
+        <!--<div style="clear:both"></div>-->
+
+        <div class="col-xs-11 col-sm-8 col-md-8 col-lg-6 loginPage" >
+            <button class="col-xs-6 btn login greenButton" style="color:#333;margin-bottom: 20px" id="loginButton">Log In</button>
+            <button class="col-xs-6 btn login" id='signupButton'>Sign Up</button>
+
+            <div class="loginInput">
+                <form class="loginInput" id="login" action="/login" method="post">
+                    <input required name="username" type="email" id="loginEmail" class="form-control" placeholder="Email Address*">
+                    <input required name="password" type="password" id="loginPass" class="form-control" placeholder="Password*">
+                    <input type="submit" id="loginSubmit" class="button btn submit" value="Submit">
+                </form>
+            </div>
+
+
+            <div class="signInput display">
+                <form class="loginInput" action="/sign_up" method="post" id="signup">
+                    <input required  type="email" name="username" id="signEmail" class="form-control" placeholder="Email Address*">
+                    <input required type="password" name="password" id="signPass" class="form-control" placeholder="Password*">
+                    <input required type="password"  onchange="checkfield()" id="resignPass" class="form-control" placeholder="Confirm Password*">
+                    <input type="submit" id="signSubmit" class="btn submit">
+                </form>
+            </div>
+
+        </div>
+    </main>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

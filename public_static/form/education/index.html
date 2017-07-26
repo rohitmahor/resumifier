@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="common_style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1 class="heading">
+        <span style="font-size: 10px;color: #fff;position: absolute;top: 45%;left:-20px"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></span>
+        <span style="color:brown">R</span>
+        <span style="color:#eeff41">e</span>
+        <span>s</span>
+        <span style="color:#2e7d32">u</span>
+        <span style="color:#512da8">m</span>
+        <span style="color: #90caf9;">i</span>
+        <span style="color: #ff3d00;">f</span>
+        <span style="color: grey;">i</span>
+        <span style="color: #eeff41;">e</span>
+        <span style="color: #512da8;">r</span>
+        <span style="font-size: 10px;color: #fff;position: absolute;top: 45%;left:104%;z-index: 1"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></span>
+    </h1>
+</header>
+<!--<div class="usericon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>-->
+
+<main class="main col-xs-11 col-sm-8 col-md- col-lg-6">
+    <h2 class="col-xs-12 col-sm-8 col-md- col-lg-6  formHeading">Education Details</h2>
+
+    <ul class="col-xs-11 inputs">
+        <li  data-toggle="modal" data-target="#secondary-modal">Secondary <span id="plus_check1"><i id="plus1" class="fa fa-plus" aria-hidden="true"></i><i id="check1" class="fa fa-check display" aria-hidden="true"></i>
+</span></li>
+        <li data-toggle="modal" data-target="#sen-secondary-modal">Senior secondary <span id="plus_check2"><i id="plus2" class="fa fa-plus" aria-hidden="true"></i><i id="check2" class="fa fa-check display" aria-hidden="true"></i></span></li>
+        <li data-toggle="modal" data-target="#graduation-modal">Graduation <span id="plus_check3"><i id="plus3" class="fa fa-plus" aria-hidden="true"></i><i id="check3" class="fa fa-check display" aria-hidden="true"></i></span></li>
+        <li data-toggle="modal" data-target="#post-graduation-modal">Post-Graduation <span id="plus_check4"><i id="plus4" class="fa fa-plus" aria-hidden="true"></i><i id="check4" class="fa fa-check display" aria-hidden="true"></i></span></li>
+        <li data-toggle="modal" data-target="#phd-modal">Ph.d <span id="plus_check5"><i id="plus5" class="fa fa-plus" aria-hidden="true"></i><i id="check5" class="fa fa-check display" aria-hidden="true"></i></span></li>
+        <!--<input type="button" value="Previous">-->
+        <!--<input type="submit" name="next" value="Next" id="next">-->
+        <li class="button-li"
+         style="background: none;
+         border: none;
+         text-align: center;
+         width: 110px;
+         height: 51px;
+         padding: 0;
+         display:block;
+         margin: 0 auto">
+                <a class="a-tag" title="Next" href="/experience"></a>
+        </li>
+    </ul>
+
+
+</main>
+
+<div class="modal fade " id="secondary-modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header modal-header-primary">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title" id="gridSystemModalLabel">Secondary(X)</h3>
+            </div>
+
+            <div class="modal-body">
+                <form id="secondary_details" method="post" style="padding: 0 20px">
+                    <label for="completion">Year of Compeletion*</label><br>
+                    <select name="completion" class="col-xs-12 input-box"    id="completion"></select>
+                    <!--<input type="number" id="compeletion" class="input-box col-xs-12" placeholder="Enter Year">-->
+
+                    <label for="board">Board*</label><br>
+                    <input required type="text" name="board" id="board" class="input-box col-xs-12" placeholder="Ex: CBSE">
+
+                    <label for="scale" class="col-xs-6" style="padding: 0">Performance Scale*</label>
+                    <label for="performance" class="col-xs-5" style="padding: 0;float:right" >Performance*</label>
+                    <select name="scale" id="scale" class="col-xs-6 input-box">
+                        <option value="%">Percentage</option>
+                        <option value="CGPA">CGPA</option>
+                    </select>
+                    <input required type="number" step="0.01" name=performance" style="float: right;" class="col-xs-5 input-box" id="performance" placeholder="0.00">
+
+
+                    <label for="school">School*</label>
+                    <input required name="school" type="text" class="col-xs-12 input-box" id="school" placeholder="Ex. XYZ Public school">
+                    <div style="clear: both;"></div>
+
+                    <!--<div style="border-bottom: 1px solid silver;position: relative;top: 10px;"></div>-->
+
+                    <input type="submit" class="btn btn-primary" name="submit" value="Save">
+                    <button type="button" class="btn btn-default close1" data-dismiss="modal" style="float: right;">Close</button>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade " id="sen-secondary-modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="background: #ab47bc">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title">Senior Secondary(XII)</h3>
+            </div>
+
+            <div class="modal-body">
+                <form id="sen_secondary_details" method="post" style="padding: 0 20px">
+
+                    <label for="sen-completion">Year of Compeletion*</label><br>
+                    <select name="sen-completion" class="col-xs-12 input-box"    id="sen-completion"></select>
+                    <!--<input type="number" id="sen-compeletion" class="input-box col-xs-12" placeholder="Enter Year">-->
+
+                    <label for="sen-board">Board*</label><br>
+                    <input required type="text" id="sen-board" class="input-box col-xs-12" placeholder="Ex: CBSE">
+
+                    <label for="sen-scale" class="col-xs-6" style="padding: 0">Performance Scale*</label>
+                    <label for="performance" class="col-xs-5" style="padding: 0;float:right" >Performance*</label>
+                    <select name="scale" id="sen-scale" class="col-xs-6 input-box">
+                        <option value="%">Percentage</option>
+                        <option value="CGPA">CGPA</option>
+                    </select>
+                    <input required type="number" step="0.01" style="float: right;" class="col-xs-5 input-box" id="sen-performance" placeholder="0.00">
+
+
+                    <label for="sen-school">School*</label>
+                    <input required type="text" class="col-xs-12 input-box" id="sen-school" placeholder="Ex. XYZ Public school">
+                    <div style="clear: both;"></div>
+
+                    <!--<div style="border-bottom: 1px solid silver;position: relative;top: 10px;"></div>-->
+
+                    <input type="submit" class="btn btn-primary" name="submit" value="Save">
+                    <button type="button" class="btn btn-default close1" data-dismiss="modal" style="float: right;">Close</button>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade " id="graduation-modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title">Graduation Details</h3>
+            </div>
+
+            <div class="modal-body">
+                <form id="graduation_details" method="post" style="padding: 0 20px">
+                    <label for="graduation-school" class="col-xs-12" style="padding: 0">College*</label>
+                    <input required type="text" class="col-xs-12 input-box" id="graduation-school" placeholder="Ex. XYZ College ">
+
+                    <label for="grad-start-year" class="col-xs-6" style="padding: 0">Start Year*</label>
+                    <label for="grad-end-year" class="col-xs-5" style="padding: 0;float:right" >Ending Year*</label>
+                    <select name="grad-start-year" class="col-xs-5 input-box"    id="grad-start-year"></select>
+                    <select name="grad-end-year" class="col-xs-5 input-box"  style="float: right;" id="grad-end-year"></select>
+                    <!--<input required type="number" class="col-xs-6 input-box" id="grad-start-year">-->
+                    <!--<input required type="number" style="float: right;" class="col-xs-5 input-box" id="grad-end-year" placeholder="0.00">-->
+
+                    <!--<label for="graduation-compeletion">Year of Compeletion*</label><br>-->
+                    <!--<input type="number" id="graduation-compeletion" class="input-box col-xs-12" placeholder="Enter Year">-->
+                    <div style="clear: both;"></div>
+
+                    <label for="grad-degree">Degree*</label><br>
+                    <input required type="text" id="grad-degree" class="input-box col-xs-12" placeholder="Ex:B-Sc.">
+
+                    <label for="grad-scale" class="col-xs-6" style="padding: 0">Performance Scale</label>
+                    <label for="grad-performance" class="col-xs-5" style="padding: 0;float:right" >Performance</label>
+                    <select name="scale" id="grad-scale" class="col-xs-6 input-box">
+                        <option value="%">Percentage</option>
+                        <option value="CGPA">CGPA</option>
+                    </select>
+                    <input  type="number" step="0.01" style="float: right;" class="col-xs-5 input-box" id="grad-performance" placeholder="0.00">
+
+                    <input type="submit" class="btn btn-primary" name="submit" value="Save">
+                    <button type="button" class="btn btn-default close1" data-dismiss="modal" style="float: right;">Close</button>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade " id="post-graduation-modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title">Post Graduation Details</h3>
+            </div>
+
+            <div class="modal-body">
+                <form id="post_graduation_details" method="post" style="padding: 0 20px">
+                    <label for="post-graduation-school" class="col-xs-12" style="padding: 0">College*</label>
+                    <input required type="text" class="col-xs-12 input-box" id="post-graduation-school" placeholder="Ex. XYZ College ">
+
+                    <label for="post-grad-start-year" class="col-xs-6" style="padding: 0">Start Year*</label>
+                    <label for="post-grad-end-year" class="col-xs-5" style="padding: 0;float:right" >Ending Year*</label>
+                    <select name="post-grad-start-year" class="col-xs-5 input-box"    id="post-grad-start-year"></select>
+                    <select name="post-grad-end-year" class="col-xs-5 input-box"  style="float: right;" id="post-grad-end-year"></select>
+                    <div style="clear: both;"></div>
+
+                    <label for="grad-degree">Degree*</label><br>
+                    <input required type="text" id="post-grad-degree" class="input-box col-xs-12" placeholder="Ex:M-Sc.">
+
+                    <label for="post-grad-scale" class="col-xs-6" style="padding: 0">Performance Scale</label>
+                    <label for="post-grad-performance" class="col-xs-5" style="padding: 0;float:right" >Performance</label>
+                    <select name="scale" id="post-grad-scale" class="col-xs-6 input-box">
+                        <option value="%">Percentage</option>
+                        <option value="CGPA">CGPA</option>
+                    </select>
+                    <input type="number"  step="0.01"  style="float: right;" class="col-xs-5 input-box" id="post-grad-performance" placeholder="0.00">
+
+                    <input type="submit" class="btn btn-primary" name="submit" value="Save">
+                    <button type="button" class="btn btn-default close1" data-dismiss="modal" style="float: right;">Close</button>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade " id="phd-modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title">PhD Details</h3>
+            </div>
+
+            <div class="modal-body">
+                <form id="phd_details" method="post" style="padding: 0 20px">
+                    <label for="phd-school" class="col-xs-12" style="padding: 0">College*</label>
+                    <input required type="text" class="col-xs-12 input-box" id="phd-school" placeholder="Ex. XYZ College ">
+
+                    <label for="phd-start-year" class="col-xs-6" style="padding: 0">Start Year*</label>
+                    <label for="phd-end-year" class="col-xs-5" style="padding: 0;float:right" >Ending Year*</label>
+                    <select name="phd-start-year" class="col-xs-5 input-box"    id="phd-start-year"></select>
+                    <select name="phd-end-year" class="col-xs-5 input-box"  style="float: right;" id="phd-end-year"></select>
+                    <div style="clear: both;"></div>
+
+                    <label for="phd-degree">Degree*</label><br>
+                    <input required type="text" id="phd-degree" class="input-box col-xs-12" placeholder="Ex:B-Sc.">
+
+                    <label for="phd-scale" class="col-xs-6" style="padding: 0">Performance Scale</label>
+                    <label for="phd-performance" class="col-xs-5" style="padding: 0;float:right" >Performance</label>
+                    <select name="scale" id="phd-scale" class="col-xs-6 input-box">
+                        <option value="%">Percentage</option>
+                        <option value="CGPA">CGPA</option>
+                    </select>
+                    <input type="number" step="0.01" style="float: right;" class="col-xs-5 input-box" id="phd-performance" placeholder="0.00">
+
+                    <input type="submit" class="btn btn-primary" name="submit" value="Save">
+                    <button type="button" class="btn btn-default close1" data-dismiss="modal" style="float: right;">Close</button>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

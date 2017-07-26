@@ -1,0 +1,87 @@
+body {
+    /*background: url("http://s2.thingpic.com/images/Uc/zUF36uJy2nuSZoHxN1QYAz4P.jpeg") fixed no-repeat;*/
+    background: url("http://hdpicturez.com/wp-content/uploads/2016/05/Best-Background-Wallpaper-2560x1600.jpg") fixed no-repeat;
+    -webkit-background-size:cover;
+    background-size: cover;
+}
+
+.loginPage {
+    float: none;
+    display: block;
+    margin:30px auto;
+    background: rgba(14, 14, 14, 0.87);;
+    padding:20px 10px 20px 10px;
+    box-shadow: 0px 2px 2px black;
+    overflow: auto
+}
+
+.loginPage > button {
+    -webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    border-radius:0px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.submit{
+    width: 150px;
+    color: grey;
+    transition: 500ms;
+    float: right;
+    color: #252626;
+}
+
+.btn:hover {
+    background: #5fc75f;
+}
+
+.submit:hover {
+    background:  limegreen;
+    padding-left: 30px;
+    transition: .5s;
+}
+
+.loginPage  button:first-child{
+    border-right:1px solid grey;
+}
+
+.loginInput > input{
+    margin: 10px 0;
+    height: 40px;
+    font-size: 18px;
+    /*display: none;*/
+}
+
+.greenButton{
+    background: limegreen;
+    color: #252626;
+    /*color: white; !important;*/
+}
+
+.display{
+    display: none;
+}
+
+.next {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.next > button {
+    width: 170px;
+    color: #252626;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:4px;
+    height: 40px;
+    width:254px;
+}
+
+.alert {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    font-size: 18px;
+    padding: 10px;
+}

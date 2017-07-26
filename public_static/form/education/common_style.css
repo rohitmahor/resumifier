@@ -1,0 +1,112 @@
+body {
+    background: url("http://hdpicturez.com/wp-content/uploads/2016/05/Best-Background-Wallpaper-2560x1600.jpg") fixed no-repeat;
+    /*background: url("http://s2.thingpic.com/images/Uc/zUF36uJy2nuSZoHxN1QYAz4P.jpeg") fixed no-repeat;*/
+    -webkit-background-size:cover;
+    background-size: cover;
+}
+
+header{
+    /*background: url("http://s2.thingpic.com/images/Uc/zUF36uJy2nuSZoHxN1QYAz4P.jpeg") fixed no-repeat;*/
+    -webkit-background-size:cover;
+    background-size: cover;
+    height: 120px;
+}
+
+header > h1 {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 50px;
+    font-family: 'Zilla Slab', serif;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 1px 2px black;
+}
+
+.formHeading {
+    display: block;
+    float: none;
+    margin: -20px auto 0px auto;
+    padding: 30px 0px;
+    /*background: rgba(0,0,0,.9);*/
+    overflow: auto;
+    text-align: center;
+    color: beige;
+    text-shadow: 0 1px 0 black;
+    /*margin-bottom: -20px*/
+}
+
+
+.heading {
+    position: relative;
+    background: rgba(0,0,0,0.7);
+    width:354px;
+}
+
+.heading:before {
+    position: absolute;
+    content:"";
+    border:47px solid transparent;
+    border-right:47px solid rgba(0,0,0,0.7);
+    left: -94px;
+    top:0;
+}
+
+.heading:after {
+    position: absolute;
+    content:"";
+    border:47px solid transparent;
+    border-left:47px solid rgba(0,0,0,0.7);
+    left: 354px;
+    top:0;
+}
+
+.a-tag {
+    position: relative;
+    /*transform-style: preserve-3d;*/
+    transition: .5s;
+    font-size: 18px;
+}
+
+.a-tag:before {
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: -53px;
+    border: 3px solid #fff;
+    padding: 8px 50px;
+    background: #fff;
+    color: #1295c9;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: .5s;
+    transform-origin: right;
+    box-shadow: 0 1px 5px black;
+    transform: translateX(-100%)rotateY(90deg) ;
+}
+
+.a-tag:after{
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: -53px;
+    border: 3px solid #1295c9;
+    padding: 8px 50px;
+    background: #1295c9;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: .5s;
+    transform-origin: left;
+    box-shadow: 0 1px 5px black;
+    transform: translateX(0)rotateY(0) ;
+}
+
+.a-tag:hover:before {
+    transform: translateX(0)rotateY(0) ;
+}
+
+.a-tag:hover:after{
+    transform: translateX(100%)rotateY(90deg) ;
+}

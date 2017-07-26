@@ -1,0 +1,42 @@
+header{
+    /*background: url("http://s2.thingpic.com/images/Uc/zUF36uJy2nuSZoHxN1QYAz4P.jpeg") fixed no-repeat;*/
+    -webkit-background-size:cover;
+    background-size: cover;
+    height: 200px;
+}
+
+header > h1 {
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+    font-size: 50px;
+    font-family: 'Zilla Slab', serif;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 1px 2px black;
+}
+
+.heading {
+    position: relative;
+    background: rgba(0,0,0,0.7);
+    width:354px;
+}
+
+.heading:before {
+    position: absolute;
+    content:"";
+    border:47px solid transparent;
+    border-right:47px solid rgba(0,0,0,0.7);
+    left: -94px;
+    top:0;
+}
+
+.heading:after {
+    position: absolute;
+    content:"";
+    border:47px solid transparent;
+    border-left:47px solid rgba(0,0,0,0.7);
+    left: 354px;
+    top:0;
+}

@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="common_style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1 class="heading">
+        <span style="font-size: 10px;color: #fff;position: absolute;top: 45%;left:-20px"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></span>
+        <span style="color:brown">R</span>
+        <span style="color:#eeff41">e</span>
+        <span>s</span>
+        <span style="color:#2e7d32">u</span>
+        <span style="color:#512da8">m</span>
+        <span style="color: #90caf9;">i</span>
+        <span style="color: #ff3d00;">f</span>
+        <span style="color: grey;">i</span>
+        <span style="color: #eeff41;">e</span>
+        <span style="color: #512da8;">r</span>
+        <span style="font-size: 10px;color: #fff;position: absolute;top: 45%;left:104%;z-index: 1"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></span>
+    </h1>
+</header>
+<!--<div class="usericon" style="background:#fbc02d;"><img src="http://www.freeiconspng.com/uploads/mind-icon-brain-head-human-mind-32.png" alt="brain" width="100px"></div>-->
+
+<main class="main col-xs-11 col-sm-8 col-md- col-lg-6">
+    <h2 class="col-xs-12 col-sm-8 col-md- col-lg-6  formHeading">Experience Details</h2>
+    <ul class="col-xs-11 inputs">
+        <li  data-toggle="modal" data-target="#training-modal">Training Details<span><i class="fa fa-plus" aria-hidden="true"></i></span></li>
+        <li data-toggle="modal" data-target="#internship-modal">Internship Details<span><i class="fa fa-plus" aria-hidden="true"></i></span></li>
+        <li data-toggle="modal" data-target="#job-modal">Job Details<span><i class="fa fa-plus" aria-hidden="true"></i></span></li>
+        <li data-toggle="modal" data-target="#project-modal">Project Details<span><i class="fa fa-plus" aria-hidden="true"></i></span></li>
+        <!--<input type="button" value="Previous">-->
+        <!--<input type="submit" name="next" value="Next" id="next">-->
+        <a href="/skills">
+            <div class="box">
+                <div class="inner_box"><h4>Next</h4></div>
+            </div>
+        </a>
+    </ul>
+
+</main>
+
+<div class="modal fade " id="training-modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header modal-header-primary">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title" id="gridSystemModalLabel">Training Details</h3>
+            </div>
+
+            <div class="modal-body">
+                <form id="training" method="post" style="padding: 0 20px">
+                    <label for="training-program">Training Program*</label><br>
+                    <input required class="col-xs-12 input-box" id="training-program" placeholder="Ex: Web Development">
+                    <!--<input type="number" id="compeletion" class="input-box col-xs-12" placeholder="Enter Year">-->
+
+                    <label for="training-organization">Organization*</label><br>
+                    <input required type="text" id="training-organization" class="input-box col-xs-12" placeholder="Ex: Coding Blocks">
+
+                    <label for="training-location">Location*</label><br>
+                    <input required type="text" id="training-location" class="input-box col-xs-12" placeholder="Ex: New Delhi/Online">
+
+                    <label for="training-start" class="col-xs-6" style="padding: 0">Start Date*</label>
+                    <label for="training-end" class="col-xs-5" style="padding: 0;float:right" >End Date*</label>
+                    <input  class="col-xs-5 input-box" type="date" id="training-start">
+                    <input  class="col-xs-5 input-box" type="date" style="float: right;" id="training-end">
+                    <div style="clear: both;"></div>
+
+                    <label for="training-description">Description(optional)</label>
+                    <textarea name="" id="training-description" class="col-xs-12" rows="5" placeholder="Short description about training" style="margin-bottom: 10px"></textarea>
+                    <!--<input required type="text" class="col-xs-12 input-box" id="training-description" placeholder="Ex. XYZ Public school">-->
+                    <div style="clear: both;"></div>
+
+                    <!--<div style="border-bottom: 1px solid silver;position: relative;top: 10px;"></div>-->
+
+                    <input type="submit" class="btn btn-primary" name="submit" value="Save">
+                    <button type="button" class="btn btn-default close1" data-dismiss="modal" style="float: right;">Close</button>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade " id="internship-modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title">Internship Details</h3>
+            </div>
+            <div class="modal-body">
+                <form id="intern" method="post" style="padding: 0 20px">
+                    <label for="intern-profile">Profile*</label><br>
+                    <input required class="col-xs-12 input-box"    id="intern-profile" placeholder="Ex: Web Development">
+                    <!--<input type="number" id="compeletion" class="input-box col-xs-12" placeholder="Enter Year">-->
+
+                    <label for="intern-organization">Organization*</label><br>
+                    <input required type="text" id="intern-organization" class="input-box col-xs-12" placeholder="Ex:Coding Blocks">
+
+                    <label for="intern-location">Location*</label><br>
+                    <input required type="text" id="intern-location" class="input-box col-xs-12" placeholder="Ex: New Delhi/Work For Home">
+
+                    <label for="intern-start" class="col-xs-6" style="padding: 0">Start Date*</label>
+                    <label for="intern-end" class="col-xs-5" style="padding: 0;float:right" >End Date*</label>
+                    <input  required class="col-xs-5 input-box" type="date" id="intern-start">
+                    <input  class="col-xs-5 input-box" type="date" style="float: right;" id="intern-end">
+                    <div style="clear: both;"></div>
+
+                    <label for="intern-description">Description(optional)</label>
+                    <textarea name="" id="intern-description" class="col-xs-12" rows="5" placeholder="Short description about internship" style="margin-bottom: 10px"></textarea>
+                    <!--<input required type="text" class="col-xs-12 input-box" id="training-description" placeholder="Ex. XYZ Public school">-->
+                    <div style="clear: both;"></div>
+
+                    <!--<div style="border-bottom: 1px solid silver;position: relative;top: 10px;"></div>-->
+
+                    <input type="submit" class="btn btn-primary" name="submit" value="Save">
+                    <button type="button" class="btn btn-default close1" data-dismiss="modal" style="float: right;">Close</button>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade " id="job-modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header" >
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title">Job Details</h3>
+            </div>
+            <div class="modal-body">
+                <form id="job" method="post" style="padding: 0 20px">
+                    <label for="job-profile">Profile*</label><br>
+                    <input required class="col-xs-12 input-box" id="job-profile" placeholder="Ex: Web Development">
+                    <!--<input type="number" id="compeletion" class="input-box col-xs-12" placeholder="Enter Year">-->
+
+                    <label for="job-organization">Organization*</label><br>
+                    <input required type="text" id="job-organization" class="input-box col-xs-12" placeholder="Ex: Coding Blocks">
+
+                    <label for="job-location">Location*</label><br>
+                    <input required type="text" id="job-location" class="input-box col-xs-12" placeholder="Ex: New Delhi/Work For Home">
+
+                    <label for="job-start" class="col-xs-6" style="padding: 0">Start Date*</label>
+                    <label for="job-end" class="col-xs-5" style="padding: 0;float:right" >End Date*</label>
+                    <input required class="col-xs-5 input-box" type="date" id="job-start">
+                    <input required class="col-xs-5 input-box" type="date" style="float: right;" id="job-end">
+                    <div style="clear: both;"></div>
+
+                    <span class="col-xs-5" style="float: right; padding: 0" >
+                        <input type="checkbox" id="current-date" >
+                        <label for="current-date">Currently Working Here</label>
+                    </span>
+
+                    <div style="clear: both;"></div>
+
+
+                    <label for="job-description">Description(optional)</label>
+                    <textarea name="" id="job-description" class="col-xs-12" rows="5" placeholder="Short description about job" style="margin-bottom: 10px"></textarea>
+                    <!--<input required type="text" class="col-xs-12 input-box" id="training-description" placeholder="Ex. XYZ Public school">-->
+                    <div style="clear: both;"></div>
+
+                    <!--<div style="border-bottom: 1px solid silver;position: relative;top: 10px;"></div>-->
+
+                    <input type="submit" class="btn btn-primary" name="submit" value="Save">
+                    <button type="button" class="btn btn-default close1" data-dismiss="modal" style="float: right;">Close</button>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade " id="project-modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title">Project Details</h3>
+            </div>
+
+            <div class="modal-body">
+                <form id="project" method="post" style="padding: 0 20px">
+                    <label for="project-title" class="col-xs-12" style="padding: 0">Title*</label>
+                    <input required type="text" class="col-xs-12 input-box" id="project-title" placeholder="Ex. E-commerce site ">
+
+                    <label  for="project-link" class="col-xs-12" style="padding: 0">Project-Link*</label>
+                    <input required type="text" class="col-xs-12 input-box" id="project-link" placeholder="Ex. https//projectlink.com">
+
+                    <label for="project-description">Description(optional)</label>
+                    <textarea name="" id="project-description" class="col-xs-12" rows="10" placeholder="Short description about Project" style="margin-bottom: 10px"></textarea>
+                    
+                    <input type="submit" class="btn btn-primary" name="submit" value="Save">
+                    <button type="button" class="btn btn-default close1" data-dismiss="modal" style="float: right;">Close</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

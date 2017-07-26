@@ -1,0 +1,108 @@
+body {
+    background: url("http://hdpicturez.com/wp-content/uploads/2016/05/Best-Background-Wallpaper-2560x1600.jpg") fixed no-repeat;
+    -webkit-background-size:cover;
+    background-size: cover;
+}
+
+header{
+    /*background: url("http://s2.thingpic.com/images/Uc/zUF36uJy2nuSZoHxN1QYAz4P.jpeg") fixed no-repeat;*/
+    -webkit-background-size:cover;
+    background-size: cover;
+    height: 120px;
+}
+
+header > h1 {
+    display: block;
+    margin:0 auto;
+    margin-top: 30px;
+    font-size: 50px;
+    font-family: 'Zilla Slab', serif;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 1px 2px black;
+}
+
+.heading {
+    position: relative;
+    background: rgba(0,0,0,0.7);
+    width:354px;
+}
+
+.heading:before {
+    position: absolute;
+    content:"";
+    border:47px solid transparent;
+    border-right:47px solid rgba(0,0,0,0.7);
+    left: -94px;
+    top:0;
+}
+
+.heading:after {
+    position: absolute;
+    content:"";
+    border:47px solid transparent;
+    border-left:47px solid rgba(0,0,0,0.7);
+    left: 354px;
+    top:0;
+}
+
+.a-tag {
+    position: absolute;
+    width:100px;
+    height: 50px;
+    background: black;
+    text-align: center;
+    color: #d32f2f;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 8px;
+    z-index: 5;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+}
+
+.a-tag:before,.a-tag:after,
+.a-tag span:before,.a-tag span:after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #d32f2f;
+    transition: 1s;
+    mix-blend-mode: hue;
+}
+
+.a-tag:hover {
+    color: #d32f2f;
+    text-decoration: none;
+}
+
+.a-tag:before {
+    top:-2px;
+    left: -2px;
+}
+
+.a-tag:after {
+    top:-2px;
+    right: -2px;
+}
+
+.a-tag span:before {
+    bottom:-2px;
+    left: -2px;
+}
+
+.a-tag span:after {
+    bottom:-2px;
+    right: -2px;
+}
+
+.a-tag:hover:before,
+.a-tag:hover:after,
+.a-tag:hover span:before,
+.a-tag:hover span:after {
+    width: 50px;
+    height: 25px;
+}

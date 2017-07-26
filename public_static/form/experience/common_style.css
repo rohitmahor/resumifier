@@ -1,0 +1,163 @@
+body {
+    background: url("http://hdpicturez.com/wp-content/uploads/2016/05/Best-Background-Wallpaper-2560x1600.jpg") fixed no-repeat;
+    /*background: url("http://s2.thingpic.com/images/Uc/zUF36uJy2nuSZoHxN1QYAz4P.jpeg") fixed no-repeat;*/
+    -webkit-background-size:cover;
+    background-size: cover;
+}
+
+header{
+    /*background: url("http://s2.thingpic.com/images/Uc/zUF36uJy2nuSZoHxN1QYAz4P.jpeg") fixed no-repeat;*/
+    -webkit-background-size:cover;
+    background-size: cover;
+    height: 120px;
+}
+
+header > h1 {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 50px;
+    font-family: 'Zilla Slab', serif;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 1px 2px black;
+}
+
+.formHeading {
+    display: block;
+    float: none;
+    margin: -20px auto 0px auto;
+    padding: 30px 0px;
+    /*background: rgba(0,0,0,.9);*/
+    overflow: auto;
+    text-align: center;
+    color: beige;
+    text-shadow: 0 1px 0 black;
+    /*margin-bottom: -20px*/
+}
+
+
+.heading {
+    position: relative;
+    background: rgba(0,0,0,0.7);
+    width:354px;
+}
+
+.heading:before {
+    position: absolute;
+    content:"";
+    border:47px solid transparent;
+    border-right:47px solid rgba(0,0,0,0.7);
+    left: -94px;
+    top:0;
+}
+
+.heading:after {
+    position: absolute;
+    content:"";
+    border:47px solid transparent;
+    border-left:47px solid rgba(0,0,0,0.7);
+    left: 354px;
+    top:0;
+}
+
+.box {
+    display: inline-block;
+    padding: 3px;
+    background: #fff;
+    position: absolute;
+    border-radius: 6px;
+    left: 50%;
+    transform: translateX(-75px);
+
+}
+.inner_box {
+    width: 150px;
+    height: 40px;
+    background: #fff;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    color: #262626;
+}
+
+.inner_box h4 {
+    position: absolute;
+    z-index: 12;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-100%);
+    text-align: center;
+    font-weight: bold;
+    letter-spacing:3px;
+    font-size: 20px;
+}
+
+.box:before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top:0;
+    left:-50%;
+    background: transparent;
+    transition: .5s;
+    z-index: 10;
+}
+.box:after{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top:0;
+    right:-50%;
+    background: transparent;
+    transition: .5s;
+    z-index: 10;
+}
+
+.inner_box:before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top:0;
+    left:-50%;
+    background: #FBC02D;
+    transition: .5s;
+    z-index: 11;
+}
+
+.inner_box:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top:0;
+    right:-50%;
+    background: #FBC02D;
+    transition: .5s;
+    z-index: 11;
+}
+
+.box:hover:before {
+    left:0;
+}
+
+.box:hover:after {
+    right:0;
+}
+
+.box:hover .inner_box h4 {
+    color: #fff;
+}
+.box:hover .inner_box:before {
+    left:0;
+}
+
+.box:hover .inner_box:after {
+    right:0;
+}
+

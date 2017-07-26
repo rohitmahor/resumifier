@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="common_style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1 class="heading">
+        <span style="font-size: 10px;color: #fff;position: absolute;top: 45%;left:-20px"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></span>
+        <span style="color:brown">R</span>
+        <span style="color:#eeff41">e</span>
+        <span>s</span>
+        <span style="color:#2e7d32">u</span>
+        <span style="color:#512da8">m</span>
+        <span style="color: #90caf9;">i</span>
+        <span style="color: #ff3d00;">f</span>
+        <span style="color: grey;">i</span>
+        <span style="color: #eeff41;">e</span>
+        <span style="color: #512da8;">r</span>
+        <span style="font-size: 10px;color: #fff;position: absolute;top: 45%;left:104%;z-index: 1"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></span>
+    </h1>
+</header>
+<!--<div class="usericon"><i class="fa fa-user-circle" aria-hidden="true"></i></div>-->
+<main>
+
+    <div id="alert">
+
+    </div>
+
+    <div style="clear:both"></div>
+
+
+    <form class="col-xs-12 col-sm-8 col-md- col-lg-6 form">
+        <h2 class="col-xs-12 col-sm-8 col-md- col-lg-6  formHeading">Personal Details</h2>
+
+        <div  class="col-xs-11 inputs">
+            <div style="display: flex">
+                <input onfocusout="fieldcheck(this)" style="margin-right: 5px" id="firstname" name="First name" required class="input-box col-xs-6 col-sm-6 col-md-6 col-lg-6" type="text" placeholder="First Name*">
+                <input onfocusout="fieldcheck(this)" id="lastname" required name="Last name" class="input-box col-xs-6 col-sm-6 col-md-6 col-lg-6" type="text" placeholder="Last Name*">
+            </div>
+
+
+            <!--<label class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >Date of Birth</label>-->
+            <input onfocusout="fieldcheck(this)" required placeholder="Date of Birth*" id="dob" name="dob" class="input-box col-xs-12 col-sm-12 col-md-12 col-lg-12" type="text" onfocus="(this.type='date')">
+            <!--<input id="dob" required class="col-xs-12 col-sm-12 col-md-12 col-lg-12" type="date" placeholder="Enter D.O.B*">-->
+
+            <input onfocusout="fieldcheck(this)" id="email" name="Email" required class="input-box col-xs-12 col-sm-12 col-md-12 col-lg-12" type="email" placeholder="Enter Your Email Address*">
+            <input onfocusout="fieldcheck(this)" id="phone" onchange="check()" name="Phone No." required class="input-box col-xs-12 col-sm-12 col-md-12 col-lg-12" type="number" placeholder="Enter Your Phone Number*">
+            <!--<input  type="button" id="previous" value="Previous">-->
+
+            <input type="submit" id="submit" name="next" value="Next" >
+        </div>
+
+    </form>
+</main>
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous">
+    </script>
+<script src="script.js"></script>
+</body>
+</html>
