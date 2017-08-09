@@ -5,7 +5,7 @@
 var MongoClient = require('mongodb').MongoClient
 
 // Connection URL
-var url = 'mongodb://resume:#rohit9810@ds139801.mlab.com:39801/resumeuser';
+var url = 'mongodb://localhost:27017/resumeuser';
 var obj ="";
 // Use connect method to connect to the server
 function connectionDB(run_server){
